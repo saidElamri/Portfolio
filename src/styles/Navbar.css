@@ -1,0 +1,40 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #333;
+  transition: box-shadow 0.3s ease;
+  position: sticky;
+  top:0;
+  z-index: 5;
+ 
+  
+}
+
+.navbar.scrolled {
+  box-shadow: 0 4px 10px #d15a10; /* Add shadow when scrolling */
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav-links a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.nav-links :hover {
+  color: #d15a10;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none; /* Use a hamburger icon or toggle button for small screens */
+  }
+}

@@ -1,0 +1,135 @@
+/* Global Background Animation for the Entire Site */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Audiowide", sans-serif;
+  background: #111;
+  color: white;
+  /* Hide overflow to avoid scrollbars */
+ 
+  min-height: 100vh;
+  overflow-x:hidden ;
+
+  /* Add the sci-fi glowing grid animation */
+  background-color: #111;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Crect x="0" y="0" width="100" height="100" fill="%23011111"/%3E%3Cpath d="M10 0L0 10h10z" stroke="%23fff" stroke-width="0.5"/%3E%3Cpath d="M10 10L0 20h10z" stroke="%23fff" stroke-width="0.5"/%3E%3C/svg%3E');
+  background-size: 50px 50px;
+  animation: sciFiBackground 25s linear infinite;
+}
+
+/* Particle Effect (Glowing Points) */
+@keyframes sciFiBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Floating Starfield Effect */
+@keyframes floatingStars {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(-500px) translateY(500px);
+  }
+}
+
+/* Star Field */
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  background: transparent url('https://cdn.pixabay.com/photo/2014/09/21/12/45/sky-451170_960_720.jpg') repeat top center;
+  animation: floatingStars 60s infinite linear;
+  opacity: 0.2;
+}
+
+.glowEffect {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+  animation: glowingText 2s ease-in-out infinite;
+}
+
+@keyframes glowingText {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff;
+  }
+  50% {
+    text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff;
+  }
+}
+
+/* Parallax Moving Effect */
+@keyframes parallaxBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Extra Sci-Fi Effect on Grid Lines */
+.grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  background-image: url('https://cdn.pixabay.com/photo/2016/10/14/05/52/space-1741175_960_720.jpg');
+  background-size: 20px 20px;
+  animation: parallaxBackground 20s infinite linear;
+}
+
+/* Some more CSS adjustments for the home page (optional) */
+.home {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 4em 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 1em 0;
+}
+
+.cta-button {
+  padding: 1em 2em;
+  background-color: #ff0077;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+}

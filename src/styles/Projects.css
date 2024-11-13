@@ -1,0 +1,78 @@
+/* src/styles/Projects.css */
+.projects {
+  padding: 2rem;
+  text-align: center;
+  height:100vh
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+}
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.project-card {
+  background-color: #333;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.project-card a.project-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background-color: #d15a10;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.project-card a.project-link:hover {
+  background-color: #b44e0a;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .project-list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
