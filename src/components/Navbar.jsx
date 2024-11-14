@@ -1,7 +1,6 @@
 // src/components/Navbar.jsx
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // If you're using React Router
-
 import '../styles/Navbar.css';
 
 const Navbar = () => {
@@ -38,6 +37,7 @@ const Navbar = () => {
             <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
                 <Link to="/">Home</Link>
                 <Link to="/projects">Projects</Link>
+                <Link to="/skills">Skills</Link> {/* New link for Skills page */}
                 <Link to="/contact">Contact</Link>
             </div>
 
