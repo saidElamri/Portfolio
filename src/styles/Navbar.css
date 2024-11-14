@@ -6,10 +6,8 @@
   background-color: #333;
   transition: box-shadow 0.3s ease;
   position: sticky;
-  top:0;
+  top: 0;
   z-index: 5;
- 
-  
 }
 
 .navbar.scrolled {
@@ -22,6 +20,11 @@
   text-decoration: none;
 }
 
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
 .nav-links a {
   color: #fff;
   margin: 0 1rem;
@@ -32,9 +35,43 @@
   color: #d15a10;
 }
 
+/* Hamburger Button for Mobile */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
 /* Mobile view */
 @media (max-width: 768px) {
   .nav-links {
-      display: none; /* Use a hamburger icon or toggle button for small screens */
+    display: none; /* Hide the links initially */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Position below the navbar */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-links.open {
+    display: flex; /* Show links when the menu is open */
+  }
+
+  /* Display hamburger button on small screens */
+  .hamburger {
+    display: flex;
   }
 }

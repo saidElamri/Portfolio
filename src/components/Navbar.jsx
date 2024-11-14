@@ -6,6 +6,7 @@ import '../styles/Navbar.css';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State to toggle mobile menu
 
     // Function to check scroll position and toggle 'scrolled' class
     const handleScroll = () => {
@@ -26,14 +27,26 @@ const Navbar = () => {
         };
     }, []);
 
+    // Toggle mobile menu visibility
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(prevState => !prevState);
+    };
+
     return (
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <Link to="/" className="logo">My Portfolio</Link>
-            <div className="nav-links">
-                <Link to="/home">Home</Link>
+            <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
+                <Link to="/">Home</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="/contact">Contact</Link>
             </div>
+
+            {/* Hamburger Button */}
+            <button className="hamburger" onClick={toggleMobileMenu}>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </button>
         </nav>
     );
 };

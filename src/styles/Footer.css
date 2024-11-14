@@ -1,6 +1,6 @@
 /* src/components/Footer.css */
 .footer {
-    background-color: #333;
+    background-color: #333333ad;
     color: #f1f1f1;
     padding: 1rem;
     text-align: center;
@@ -9,7 +9,7 @@
     bottom: 0;
     width: 100%;
     overflow-x: hidden;
-    opacity: 55%;
+   
   }
   
   .footer-content {
@@ -29,9 +29,10 @@
   }
   
   .social-links a {
-    color: #f1f1f1;
+    color: #61dbfb;
     text-decoration: none;
     transition: color 0.3s;
+   
   }
   
   .social-links a:hover {

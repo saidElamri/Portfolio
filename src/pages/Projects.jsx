@@ -3,9 +3,9 @@ import React from 'react';
 import '../styles/Projects.css'; // Import the CSS file for styling
 
 const projects = [
-  { title: 'MLS Quiz App', description: 'A quiz platform with React and MongoDB.', tech: 'MERN', link: '#', img: './public/pro.jpg' },
-  { title: 'ODCStream', description: 'A platform for managing online meetings.', tech: 'React, Node.js', link: '#', img: './public/pro.jpg' },
-  { title: 'Little Lemon Booking', description: 'A restaurant booking form with Django and MySQL.', tech: 'Django, MySQL', link: '#', img: './public/pro.jpg' },
+  { title: 'MLS Quiz App', description: 'A quiz platform with React and MongoDB.', tech: 'MERN', link: '#', img: './pro.jpg' },
+  { title: 'ODCStream', description: 'A platform for managing online meetings.', tech: 'React, Node.js', link: '#', img: './pro.jpg' },
+  { title: 'Little Lemon Booking', description: 'A restaurant booking form with Django and MySQL.', tech: 'Django, MySQL', link: '#', img: './pro.jpg' },
 ];
 
 function Projects() {
