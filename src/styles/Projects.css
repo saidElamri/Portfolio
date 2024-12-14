@@ -2,14 +2,13 @@
 .projects {
   padding: 2rem;
   text-align: center;
-  height:100vh
+  min-height: 100vh;
 }
 
 h2 {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   color: #b44e0a;
-
 }
 
 .project-list {
@@ -19,7 +18,6 @@ h2 {
   align-items: center;
   margin: 0 auto;
   padding: 0 2rem;
-
 }
 .project-image {
   width: 100%;
@@ -68,6 +66,23 @@ h2 {
 
 .project-card a.project-link:hover {
   background-color: #b44e0a;
+}
+
+.project-card a.project-website {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  background-color: #10b45e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.project-card a.project-website:hover {
+  background-color: #0a8c46;
 }
 
 /* Responsive styling for smaller screens */
