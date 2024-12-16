@@ -26,16 +26,16 @@ function Contact() {
       
       {/* Social Media Links */}
       <div className="social-media">
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/saidElamri" target="_blank" rel="noopener noreferrer">
           <FaGithub size={30} />
         </a>
-        <a href="https://www.linkedin.com/in/yourname" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/said-elamri/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin size={30} />
         </a>
         <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
           <FaInstagram size={30} />
         </a>
-        <a href="mailto:your.email@example.com">
+        <a href="mailto:said.elamri.evil@gmail.com">
           <FaEnvelope size={30} />
         </a>
       </div>

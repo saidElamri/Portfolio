@@ -1,4 +1,4 @@
-/* src/components/Navbar.css */
+/* Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -31,7 +31,7 @@
   text-decoration: none;
 }
 
-.nav-links :hover {
+.nav-links:hover {
   color: #d15a10;
 }
 
