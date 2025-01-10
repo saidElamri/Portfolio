@@ -27,6 +27,15 @@ const projects = [
     website: 'https://little-lemon-booking.com', // Add the hosted website link
     img: './pro.jpg' 
   },
+  {
+    title: 'Food Xplorers',
+    description: 'An app that suggests the best native foods, recipes, and places worldwide.',
+    tech: 'React, Vite, TheMealDB API',
+    link: 'https://github.com/saidElamri/native-food',
+    website: 'https://foodxplorers.netlify.app',
+    img: './foodapp.png'
+  }
+  
 ];
 
 function Projects() {
